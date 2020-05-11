@@ -1,0 +1,26 @@
+[
+    {
+        "description": "SFTP ",
+        "url": "sftp://username@server.example.org/Backups",
+        "env": [
+		    {
+		     "name": "FTP_PASSWORD",
+		     "value": "sECreT_pass1!!"
+		    }
+	   ]
+    },
+    {
+        "description": "S3",
+        "url": "boto3+s3://aws-bucket-name/backups-duplicity",
+        "env": [
+		    {
+		     "name": "AWS_ACCESS_KEY_ID",
+		     "value": "AKIAIOSFODNN7EXAMPLE"
+		    },
+		    {
+		     "name":"AWS_SECRET_ACCESS_KEY",
+		     "value": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+		    }
+	   ]
+	}
+]

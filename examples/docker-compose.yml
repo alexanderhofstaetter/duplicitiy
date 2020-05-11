@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+
+  duplicity:
+    image: alexanderhofstaetter/duplicity
+    container_name: duplicity
+    hostname: duplicity
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - cache:/root/.cache/duplicity
+    #  - ./config/known_hosts:/root/.ssh/known_hosts:ro
+
+volumes:
+  cache:
