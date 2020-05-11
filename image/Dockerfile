@@ -1,4 +1,5 @@
 FROM ubuntu:20.04
+LABEL maintainer="alex@hofstaetter.io"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -62,3 +63,10 @@ COPY scripts /scripts
 RUN ["chmod", "-R", "+x", "/scripts"]
 
 CMD ["/scripts/entrypoint.sh"]
+
+
+# Labels
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.name="alexanderhofstaetter/duplicity"
+LABEL org.label-schema.description="Simple duplicity backups"
+LABEL org.label-schema.vcs-url="https://github.com/alexanderhofstaetter/duplicity"
