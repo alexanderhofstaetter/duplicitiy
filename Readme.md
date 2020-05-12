@@ -1,6 +1,8 @@
 # Duplicity Backup
 A docker image for recurring [duplicity](http://duplicity.nongnu.org/) backups based on Ubuntu 20.04 and python3. It uses the latest version of duplicity (currently; `0.8.12`) including cron and the ability to define multiple duplicity backup tasks. Inspired by [ViViDboarder/docker-duplicity-cron](https://github.com/ViViDboarder/docker-duplicity-cron).
 
+This image is also available on Docker Hub, see: (hub.docker.com/r/alexanderhofstaetter/duplicity)[https://hub.docker.com/r/alexanderhofstaetter/duplicity]. The `latest` tag gets built everytime a new push is made to the master branch.
+
 **duplicity**
 Duplicitiy is a backup tool which can perform full and incremental backups and stores them on different backends (e.g. S3, FTP, Public Clouds, Local, SCP) in tar format (compressed, signed/encrypted).
 
